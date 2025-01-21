@@ -1,0 +1,287 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "variables";
+@import "mixins";
+
+/* Standard */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: $color-3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-primary;
+  font-size: $p-font-size;
+  color: $color-1;
+  width: 85%;
+  margin: 0 auto; /* centrerar */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-secondary;
+  color: $color-1;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+
+.header-dropdown {
+  background-color: $color-1;
+  width: 100vw;
+  height: 15vh;
+  position: sticky;
+  top: 0;
+
+  .logo {
+    height: 100%;
+    float: inline-start;
+    aspect-ratio: 1 / 1;
+  }
+
+  .header-title {
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    color: $color-4;
+    margin-left: 5%;
+    @include title-font();
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 1000; /* a higher z-index put navbar above dropdown */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    background: $color-1;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+
+    li {
+      a {
+        display: block;
+        color: $color-3;
+        font-size: 1.5rem;
+        width: 70vw;
+        padding-left: 5vw;
+        background-color: $color-5;
+        border-radius: 10px;
+      }
+    }
+  }
+  .navbar:target {
+    transform: translateY(0);
+  }
+}
+.dropdown:link {
+  width: 20vw;
+  height: 100%;
+  background-image: url(Hamburgare.png);
+  background-size: 100% 100%;
+  background-color: $color-5;
+  float: inline-end;
+}
+.dropdownclose:link {
+  width: 20vw;
+  height: 15vh;
+  background-image: url(HamburgareStäng.png);
+  background-size: 100% 100%;
+  background-color: $color-5;
+  position: fixed;
+  top: 0;
+  right: 18px;
+}
+
+/* Sektion om bokhandelns historia */
+.history-section {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between; /* Jämnt fördela sektionerna */
+  align-items: center;
+}
+
+.history-text {
+  flex: 2; /* Gör textdelen bredare */
+  max-width: 60%; /* Maxbredd för texten */
+}
+
+.history-image {
+  flex: 1; /* Bilden får en mindre del */
+  max-width: 300px;
+}
+
+.history-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Team-sektion */
+.team-section {
+  text-align: center;
+  width: 100%; /* Full bredd */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap; /* Låter de brytas till nästa rad */
+  justify-content: center;
+  gap: 20px; /* Utrymme mellan bilderna */
+}
+
+.team-member {
+  flex: 1;
+  max-width: 300px; /* Maxbredd för varje bild */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Skugga*/
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 20%;
+  margin-bottom: 15px;
+}
+
+/* Kontaktsektion */
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Elementen bryts till nästa rad om behov */
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Skugga */
+}
+
+/* Kontaktformulär */
+.contact-form,
+.contact-info {
+  flex: 1;
+  min-width: 300px; /* Minimera bredd för att undvika för smala sektioner */
+  padding: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px; /* Marginal mellan fälten */
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* kant */
+    border-radius: 5px;
+  }
+}
+
+button {
+  margin: 0 auto; /* Centrera knappen */
+  display: block; /* Gör knappen till ett blockelement */
+  background-color: $color-2;
+  color: $color-3;
+  padding: 10px 15px; /*Padding inuti knappen*/
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Effekt för bakgrundsfärg */
+}
+
+/* Stilar för kontaktinformationen */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.address {
+  margin-bottom: 20px; /* Marginal under adressen */
+}
+
+.map {
+  iframe {
+    width: 100%; /* Full bredd för kartan */
+    border: 0;
+  }
+}
+
+/* För mobila enheter med maxbredd 768px */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Ändra layouten för .history-section till column */
+  .history-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .history-text {
+    max-width: 100%;
+  }
+
+  .history-image {
+    max-width: 100%; /* Justera bildstorleken */
+    margin-top: 20px; /* Marginal ovanför bilden */
+  }
+
+  /* Ändra layouten för team-sektionen - column */
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    max-width: 100%; /* varje bild tar upp hela bredden */
+  }
+
+  /* Kontaktformulär och kontaktinformation - column */
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info {
+    max-width: 100%;
+  }
+
+  .map iframe {
+    height: 300px; /* Justera höjden på kartan för mobila enheter */
+  }
+}

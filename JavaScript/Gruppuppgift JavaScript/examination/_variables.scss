@@ -1,0 +1,23 @@
+// Färgvariabler
+$color-1: #273043;
+$color-2: #9197ae;
+$color-3: #eff6ee;
+$color-4: #f02d3a;
+$color-5: #dd0426;
+
+// Variabler för teckensnitt
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Playfair Display", serif;
+
+// Variabler för font-storlekar
+$h1-font-size: 36px;
+$h2-font-size: 30px;
+$h3-font-size: 24px;
+$p-font-size: 16px;
+
+@mixin title-font {
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
