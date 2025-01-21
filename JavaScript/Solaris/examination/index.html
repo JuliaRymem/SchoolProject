@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> &#127769 Solaris</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SOLARIS</h1>
+      <h5>
+        Låt SOLARIS bli din guide till stjärnorna! <br /><br />
+        Här kan du lära dig om planeterna, utforska vårat solsystem, planeternas
+        banor <br />
+        och upptäcka fascinerande fakta om rymden.
+      </h5>
+    </header>
+    <!-- Sektion för sökning mot API -->
+    <section class="button-section">
+      <input
+        type="text"
+        id="search"
+        placeholder="Vilken planet vill du veta mer om?" />
+      <br />
+      <button id="searchButton">Utforska!</button>
+      <div id="results"></div>
+      <button id="closeButton" style="display: none">X</button>
+    </section>
+    <nav class="planet-links">
+      <a href="mercury.html" class="planet-link mercury">Merkurius</a>
+      <a href="venus.html" class="planet-link venus">Venus</a>
+      <a href="earth.html" class="planet-link earth">Jorden</a>
+      <a href="mars.html" class="planet-link mars">Mars</a>
+      <a href="jupiter.html" class="planet-link jupiter">Jupiter</a>
+      <a href="saturn.html" class="planet-link saturn">Saturnus</a>
+      <a href="uranus.html" class="planet-link uranus">Uranus</a>
+      <a href="neptune.html" class="planet-link neptune">Neptunus</a>
+    </nav>
+    <!-- Sektion med planeter -->
+    <section class="solsystem">
+      <div class="orbit" id="orbit-mercury"></div>
+      <div class="planet" id="mercury"></div>
+
+      <div class="orbit" id="orbit-venus"></div>
+      <div class="planet" id="venus"></div>
+
+      <div class="orbit" id="orbit-earth"></div>
+      <div class="planet" id="earth"></div>
+
+      <div class="orbit" id="orbit-mars"></div>
+      <div class="planet" id="mars"></div>
+
+      <div class="orbit" id="orbit-jupiter"></div>
+      <div class="planet" id="jupiter"></div>
+
+      <div class="orbit" id="orbit-saturn"></div>
+      <div class="planet" id="saturn"></div>
+
+      <div class="orbit" id="orbit-uranus"></div>
+      <div class="planet" id="uranus"></div>
+
+      <div class="orbit" id="orbit-neptune"></div>
+      <div class="planet" id="neptune"></div>
+    </section>
+    <footer><p>&copy; 2024 Julia Rasmusson</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

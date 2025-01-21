@@ -1,0 +1,496 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap");
+
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Regler för bodyn */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(238, 174, 202, 0.9) 23%,
+    rgb(31, 51, 74) 100%
+  );
+  margin: 0;
+}
+
+/* Regler för header */
+header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  color: rgb(253, 252, 252);
+  font-size: 48px;
+  margin: 0;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/*Regler för sök-sektionen */
+.button-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 40px;
+}
+
+/* Regler för sökrutan */
+#search {
+  font-family: "Roboto", sans-serif;
+  width: 40%;
+  padding: 10px; /* Utrymmet inuti sökfältet */
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid #cbb6b6; /* Kant runt rutan */
+  border-radius: 5px;
+  outline: none; /* Ta bort kanten vid fokus */
+  transition: border-color 0.3s ease; /* Övergång vid fokus */
+}
+
+#search:focus {
+  border-color: #787c81; /* Färg vid fokus */
+}
+/* Regler för knappen */
+#searchButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #855b7c;
+  border: none; /* Tar bort standardkant */
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Övergång vid hover */
+}
+/* Vid hover */
+#searchButton:hover {
+  background-color: #c7cbd0;
+  transform: scale(1.05); /* Liten skala-effekt vid hover */
+}
+
+/* Regler för planet-länkarna */
+.planet-links {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px; /* Avståndet mellan länkarna */
+  background: linear-gradient(
+    117deg,
+    rgba(111, 100, 105, 0.137),
+    rgb(87, 106, 127) 100%
+  );
+}
+
+.planet-links .planet-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+  transition: color 0.2s ease;
+}
+/* Vid hover */
+.planet-links .planet-link:hover {
+  color: #ffcc33;
+}
+/* Regler för solsystemet */
+.solsystem {
+  position: relative;
+  width: 100vmin;
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Solen i mitten på omloppsbanan */
+.solsystem::before {
+  content: ""; /* pseudo-elementet, som är "osynligt"*/
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #d5d2c6;
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(255, 204, 0, 0.8);
+  z-index: 10; /* Placera solen ovanför banorna */
+}
+
+/* Omloppsbanor */
+.orbit {
+  position: absolute;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+/* Planeter */
+.planet {
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* Merkurius */
+#orbit-mercury {
+  width: 120px;
+  height: 120px;
+}
+
+#mercury {
+  width: 10px;
+  height: 10px;
+  background-color: #7a7a7a;
+  animation: orbit-mercury 4s linear infinite;
+}
+
+/* Venus */
+#orbit-venus {
+  width: 180px;
+  height: 180px;
+}
+
+#venus {
+  width: 15px;
+  height: 15px;
+  background-color: #e2a400;
+  animation: orbit-venus 6s linear infinite;
+}
+
+/* Jorden */
+#orbit-earth {
+  width: 240px;
+  height: 240px;
+}
+
+#earth {
+  width: 20px;
+  height: 20px;
+  background-color: #3c8cdc;
+  animation: orbit-earth 8s linear infinite;
+}
+
+/* Mars */
+#orbit-mars {
+  width: 300px;
+  height: 300px;
+}
+
+#mars {
+  width: 18px;
+  height: 18px;
+  background-color: #a84b3b;
+  animation: orbit-mars 9s linear infinite;
+}
+
+/* Jupiter */
+#orbit-jupiter {
+  width: 400px;
+  height: 400px;
+}
+
+#jupiter {
+  width: 40px;
+  height: 40px;
+  background-color: #c38f6d;
+  animation: orbit-jupiter 12s linear infinite;
+}
+
+/* Saturnus */
+#orbit-saturn {
+  width: 480px;
+  height: 480px;
+}
+
+#saturn {
+  width: 35px;
+  height: 35px;
+  background-color: #d1b77b;
+  animation: orbit-saturn 14s linear infinite;
+}
+
+/* Uranus */
+#orbit-uranus {
+  width: 560px;
+  height: 560px;
+}
+
+#uranus {
+  width: 25px;
+  height: 25px;
+  background-color: #7ccfe1;
+  animation: orbit-uranus 16s linear infinite;
+}
+
+/* Neptunus */
+#orbit-neptune {
+  width: 640px;
+  height: 640px;
+}
+
+#neptune {
+  width: 30px;
+  height: 30px;
+  background-color: #4a7da7;
+  animation: orbit-neptune 18s linear infinite;
+}
+
+/* Animationer för planeter */
+/* Alla planeter har sin egen bana och hastighet*/
+@keyframes orbit-mercury {
+  0% {
+    transform: rotate(0deg) translateX(60px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(60px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-venus {
+  0% {
+    transform: rotate(0deg) translateX(90px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(90px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-earth {
+  0% {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-mars {
+  0% {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-jupiter {
+  0% {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-saturn {
+  0% {
+    transform: rotate(0deg) translateX(240px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(240px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-uranus {
+  0% {
+    transform: rotate(0deg) translateX(280px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(280px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-neptune {
+  0% {
+    transform: rotate(0deg) translateX(320px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(320px) rotate(-360deg);
+  }
+}
+
+/* Resultat från hämtning med API */
+#results {
+  display: flex;
+  width: 400px;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  position: relative; /* För att placera stängningsknappen relativt till resultatet */
+}
+
+/* Resultatkort */
+.card {
+  background-color: #f9f9f9a6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Gör så att krysset placeras på rätt plats */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* När man hovrar över korten */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Krysset (stängningsknappen) i kortet */
+.card .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #ef0000;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Vid hover över krysset */
+.card .close-btn:hover {
+  color: #b06453;
+}
+
+/* Stilregler på resultatrubriken och texten */
+.card h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 8px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #060606;
+}
+/* Fetare text för rubriker i "card" */
+.card p strong {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 3px; /* Avstånd mellan strong och texten */
+}
+/* Avstånd mellan varje rad, mellar rubrik och text */
+.card p + p {
+  margin-top: 12px;
+}
+
+.card .orbitalPeriod {
+  color: #337ab7;
+}
+
+/* Footer-stil */
+footer {
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  text-align: center;
+  padding: 10px;
+  width: 100%; /* Gör footern lika bred som viewporten */
+  font-size: 12px;
+}
+
+/* Responsiv design för mindre skärmar */
+/* Allt innehåll ska behålla sina positioner, men bli mindre*/
+@media (max-width: 768px) {
+  body {
+    justify-content: center;
+    margin-bottom: auto;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden; /* Förhindrar horisontell scroll */
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h5 {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .button-section {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  #search {
+    width: 70%; /* Gör sökfältet lite större på små skärmar */
+    font-size: 16px; /* Större text i sökfältet */
+  }
+
+  #searchButton {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .planet-links {
+    max-width: 100%;
+    gap: 5px; /* Mindre avstånd mellan länkar */
+    padding: 20px;
+  }
+
+  .planet-links .planet-link {
+    font-size: 12px;
+  }
+
+  .solsystem {
+    width: 80%; /* Minskar storleken på solsystemet */
+    height: 80%;
+    padding: 60%; /* Angett i %, gör layouten mer responsiv eftersom den är proportionell mot föräldraelementets storlek */
+  }
+
+  .solsystem::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .orbit {
+    border-width: 1px; /* Minskar bredden på omloppsbanorna */
+  }
+
+  .planet {
+    width: 40%; /* Planeterna får en lite mindre storlek */
+    height: 40%;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card h3 {
+    font-size: 24px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,149 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap");
+
+/* Design på sidan */
+body {
+  display: flex; /* Layout med flexbox*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Gör att sidan täcker hela höjden på viewporten */
+  background: linear-gradient(
+    117deg,
+    rgba(108, 69, 85, 0.851) 23%,
+    rgba(87, 106, 127, 0.839) 100%
+  );
+  margin: 0; /* Tar bort default marginaler */
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Stil för headern */
+header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Avstånd nedanför headern */
+  padding: 5px; /* Padding runt headerinnehållet */
+  width: 100%; /* Gör headern lika bred som viewporten */
+}
+
+header h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 56px;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/* Huvudområdet */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Inkluderar padding i total bredd och höjd */
+}
+
+/* Stil för planet-information */
+.planet-info {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.planet-info h2 {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase; /* Gör rubriken versal */
+}
+
+.planet-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+/* Stil för info p-strong */
+.planet-info p strong {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Stil för sektion - liv och miljö */
+.planet-habitat,
+.planet-environment,
+.planet-human-impact {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.planet-habitat h2,
+.planet-environment h2,
+.planet-human-impact h2 {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.planet-habitat p,
+.planet-environment p,
+.planet-human-impact p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Styling på knappen */
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: #693d5f;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+a:hover {
+  background: #5a54cc80;
+}
+
+a:focus {
+  outline: 2px solid #ffffff; /* Visuell indikation för fokuserade länkar (t.ex tangentbord) */
+}
+
+/* Regler för footer */
+footer {
+  margin-top: auto;
+  color: #333333;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  font-size: 12px;
+}
