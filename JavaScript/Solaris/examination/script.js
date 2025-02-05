@@ -1,9 +1,10 @@
 // API-endpoint för att hämta en API-nyckel
 // API-endpoint för att hämta data om himlakroppar (planeter, månar etc.)
 const API_ENDPOINT_KEYS =
-  "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys";
+  "https://i4kif2xfk7.execute-api.eu-north-1.amazonaws.com/keys";
 const API_ENDPOINT_BODIES =
-  "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies";
+  "https://i4kif2xfk7.execute-api.eu-north-1.amazonaws.com/bodies";
+
 
 // Hämta API-nyckel från servern
 async function fetchApiKey() {
