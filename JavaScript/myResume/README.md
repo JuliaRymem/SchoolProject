@@ -8,7 +8,7 @@ Följ dessa steg för att köra projektet lokalt:
 **Klona repositoriet**
 Klona projektet till din lokala maskin med följande kommando:
 
-git clone https://github.com/ditt-github-användarnamn/reactify-your-resume.git
+`git clone https://github.com/ditt-github-användarnamn/reactify-your-resume.git`
 
 **Navigera till projektmappen**
 Gå in i den klonade projektmappen:
