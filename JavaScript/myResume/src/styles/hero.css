@@ -1,0 +1,85 @@
+/* Styling för Hero.jsx och About.jsx */
+
+/* About Section */
+#about-section {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 128px 32px; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 8px; 
+}
+
+#about-section h2 {
+    margin-bottom: 16px; 
+    font-size: 44px; 
+    font-weight: 700;
+}
+
+#about-section .headshot {
+    width: 320px; 
+    height: 320px; 
+    overflow: hidden;
+    margin-top: 16px; 
+    margin-bottom: 37px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#about-section .headshot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+#about-section .headshot img:hover {
+    transform: scale(1.2);
+}
+
+#about-section .bio {
+    margin-bottom: 32px; 
+    padding: 0 32px; 
+    max-width: 70%;
+    text-align: center;
+}
+
+#about-section .bio p {
+    font-family: "Karla", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#about-section .social-links {
+    font-size: 38px; 
+}
+
+#about-section .social-links a {
+    padding: 0;
+    margin: 0 12px; 
+}
+
+#about-section .social-links a i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+#about-section .social-links a:hover i {
+    color: #83a983c7;
+    transform: scale(1.2);
+}
+
+#about-section .social-links i {
+    color: #d3beb5d8;
+    font-weight: 500;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

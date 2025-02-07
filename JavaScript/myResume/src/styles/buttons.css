@@ -1,0 +1,64 @@
+/* Knapp ChangeColor i headern */
+button {
+  font-family: 'Karla', sans-serif;
+  background-color: #fefbff;
+  color: rgb(49, 46, 46);
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* skugga för att skapa djup */
+}
+button:hover {
+  background-color: #c5d0dc;
+}
+
+/* Styling för ReadMoreButton */
+.read-more-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #d3beb5d8;
+    color: rgb(33, 30, 30);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* skugga för att skapa djup */
+   
+  }
+
+  .read-more-button:hover {
+    background-color: #c5d0dc;
+  }
+
+  /* Knappen för att skicka formuläret */
+  .submit-button {
+    background-color: #d3beb5d8;
+    color: rgb(29, 27, 27);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover {
+    background-color: #a08292; 
+  }
+
+  /* Knappen för länk till GitHub för Solaris */
+  .link-button-github{
+background-color: #d9c1e0;
+color: rgb(37, 36, 36);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* skugga för att skapa djup */
+
+  }
+  .link-button-github:hover {
+    background-color: #a08292; 
+  }

@@ -1,0 +1,45 @@
+/* Styling för Contact och ContactPage */
+
+/* Leave a Message Section */
+#leave-message-section {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+#leave-message-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+#leave-message-section p {
+    font-size: 1.25rem;
+    color: #555;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* ContactPage.jsx - styling för formuläret */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
