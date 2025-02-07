@@ -42,7 +42,7 @@ Projektet är byggt med följande teknologier:
 * **CSS** – Styling
 * **Swiper.js** – Interaktiva bildkaruseller
 * **useState Hook** – Hantering av komponentens lokala state
-
+---------------------------------
   *Extra funktion*
   **useRef** **Hook**
   I applikationen används **useRef** för att automatiskt sätta fokus på det första inputfältet i kontaktformuläret när sidan laddas. När användaren besöker Kontakt-sidan, fokuserar applikationen automatiskt på fältet "Ditt namn", vilket förbättrar användarupplevelsen och gör det enklare att börja fylla i formuläret.
