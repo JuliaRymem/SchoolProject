@@ -17,7 +17,7 @@ Gå in i den klonade projektmappen:
 **Installera nödvändiga beroenden**
 Installera de nödvändiga paketen med:
 
-``npm install`
+`npm install`
 
 **Starta utvecklingsservern**
 Kör utvecklingsservern för att starta projektet:
@@ -25,6 +25,7 @@ Kör utvecklingsservern för att starta projektet:
 
 **Öppna applikationen i webbläsaren**
 Öppna din webbläsare och gå till 
+
 `http://localhost:5173/` (eller den port som Vite specificerar) för att se projektet i drift.
 
 
