@@ -47,7 +47,7 @@ Projektet är byggt med följande teknologier:
 ## **Kontakt**
 
 📧 **E-post:** *[j]()uliakrasmusson@hotmail.com*
-🔗 **LinkedIn:** [*Din LinkedIn-profil*](#)
+🔗 **LinkedIn:** [*www.linkedin.com/in/juliarasmusson*](#)
 
 # React + Vite
 
