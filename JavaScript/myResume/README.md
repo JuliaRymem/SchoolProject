@@ -45,8 +45,7 @@ Projektet är byggt med följande teknologier:
 
   *Extra funktion*
   **useRef** **Hook**
-  I applikationen används **useRef** för att automatiskt sätta fokus på det första inputfältet i kontaktformuläret när sidan laddas.
-  * När användaren besöker Kontakt-sidan, fokuserar applikationen automatiskt på fältet "Ditt namn", vilket förbättrar användarupplevelsen och gör det enklare att börja fylla i formuläret.
+  I applikationen används **useRef** för att automatiskt sätta fokus på det första inputfältet i kontaktformuläret när sidan laddas. När användaren besöker Kontakt-sidan, fokuserar applikationen automatiskt på fältet "Ditt namn", vilket förbättrar användarupplevelsen och gör det enklare att börja fylla i formuläret.
 * Hur det fungerar:
 1. En ref skapas med useRef(null) och kopplas till inputfältet för namn (<input>).
 2. När komponenten renderas, används useEffect för att köra en funktion som sätter fokus på inputfältet med nameInputRef.current.focus().
