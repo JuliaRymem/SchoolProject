@@ -2,6 +2,23 @@
 
 En interaktiv **Single Page Application (SPA)** byggd med  **React** , som fungerar som en personlig hemsida. Webbappen presenterar information om mig själv, mina färdigheter, erfarenheter, projekt och kontaktinformation.
 
+📥 Installation
+Följ dessa steg för att köra projektet lokalt:
+
+Klona repositoriet:
+git clone https://github.com/ditt-github-användarnamn/reactify-your-resume.git
+Navigera till projektmappen:
+cd reactify-your-resume
+Installera nödvändiga paket:
+
+npm install
+Starta utvecklingsservern:
+sh
+Kopiera
+Redigera
+npm run dev
+Öppna http://localhost:5173/ i webbläsaren (eller den port som Vite anger).
+
 ## **Teknologier**
 
 Projektet är byggt med följande teknologier:
