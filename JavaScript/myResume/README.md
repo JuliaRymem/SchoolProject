@@ -2,11 +2,7 @@
 
 En interaktiv **Single Page Application (SPA)** byggd med  **React** , som fungerar som en personlig hemsida. Webbappen presenterar information om mig själv, mina färdigheter, erfarenheter, projekt och kontaktinformation.
 
-## **Live Demo**
-
-🚀 **[Se den live på Netlify](#)** (Lägg in din Netlify-länk här)
-
-## **nstallation**
+## **Installation**
 
 Följ dessa steg för att köra projektet lokalt:
 
