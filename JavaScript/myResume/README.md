@@ -21,10 +21,15 @@ Projektet är byggt med följande teknologier:
 ## **Funktionalitet**
 
 ✔ **Props** – Används för att skicka data mellan komponenter och säkerställa ett effektivt dataflöde.
+
 ✔ **Redux (Global State Management)** – Möjlighet att ändra färg på headern dynamiskt.
+
 ✔ **React Router** – Navigation mellan olika sektioner och sidor via **ReadMoreButton** (Exempel: "Om mig", "Projekt", "Kontakt").
+
 ✔ **useState Hook** – Används i kontaktformuläret där besökaren kan skicka ett interaktivt meddelande.
+
 ✔ **useRef Hook** – Sätter automatiskt fokus på det första inputfältet i kontaktformuläret vid sidladdning.
+
 
 ## **Kontakt**
 
