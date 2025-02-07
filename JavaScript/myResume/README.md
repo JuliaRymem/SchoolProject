@@ -8,7 +8,7 @@ Följ dessa steg för att köra projektet lokalt:
 **Klona repositoriet**
 Klona projektet:
 
-`git clone https://github.com/ditt-github-användarnamn/reactify-your-resume.git`
+`git clone [https://github.com/ditt-github-användarnamn/reactify-your-resume.git](https://github.com/JuliaRymem/SchoolProject/tree/878b121742632fa15c8a4ea027712c829bda486f/JavaScript/myResume)`
 
 **Navigera till projektmappen**
 Gå in i den klonade projektmappen:
