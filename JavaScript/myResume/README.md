@@ -6,25 +6,30 @@ En interaktiv **Single Page Application (SPA)** byggd med  **React** , som funge
 Följ dessa steg för att köra projektet lokalt:
 
 **Klona repositoriet**
+
 Klona projektet till din lokala maskin med följande kommando:
 
 `git clone https://github.com/ditt-github-användarnamn/reactify-your-resume.git`
 
 **Navigera till projektmappen**
+
 Gå in i den klonade projektmappen:
-cd myResume
+`cd myResume`
 
 **Installera nödvändiga beroenden**
+
 Installera de nödvändiga paketen med:
 
-npm install
+`npm install`
 
 **Starta utvecklingsservern**
+
 Kör utvecklingsservern för att starta projektet:
-npm run dev
+`npm run dev`
 
 **Öppna applikationen i webbläsaren**
-Öppna din webbläsare och gå till http://localhost:5173/ (eller den port som Vite specificerar) för att se projektet i drift.
+Öppna din webbläsare och gå till 
+`http://localhost:5173/` (eller den port som Vite specificerar) för att se projektet i drift.
 
 
 ## **Teknologier**
